@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喻凡 - 个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: 3px solid #e8491d;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ccc;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com/800x500') no-repeat 0 -100px;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 65px;
+            margin-bottom: 10px;
+            color: #e8491d;
+        }
+        #showcase p {
+            font-size: 28px;
+            color: #e8491d;
+            font-weight: bold;
+        }
+        #newsletter {
+            padding: 15px;
+            color: #fff;
+            background: #35424a;
+        }
+        #newsletter h1 {
+            float: left;
+        }
+        #newsletter form {
+            float: right;
+            margin-top: 15px;
+        }
+        #newsletter input[type="email"] {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+        .button_1 {
+            height: 38px;
+            background: #e8491d;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+        }
+        article#main-col {
+            float: left;
+            width: 65%;
+        }
+        aside#sidebar {
+            float: right;
+            width: 30%;
+            margin-top: 10px;
+        }
+        aside#sidebar .quote {
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+        /* Media Queries */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li,
+            #newsletter h1,
+            #newsletter form,
+            #boxes .box,
+            article#main-col,
+            aside#sidebar {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header nav {
+                margin-top: 0px;
+            }
+            header #branding h1 {
+                font-size: 20px;
+            }
+            #newsletter form {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">喻凡</span> - 个人主页</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">主页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="services.html">研究</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>欢迎来到我的个人主页</h1>
+            <p>环境工程硕士 | 农田土壤重金属污染修复</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>订阅我的最新研究进展</h1>
+            <form>
+                <input type="email" placeholder="输入邮箱...">
+                <button type="submit" class="button_1">订阅</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="container">
+        <article id="main-col">
+            <h2>关于我</h2>
+            <p>
+                华中农业大学环境工程硕士，预计2027年7月毕业。导师为熊双莲教授，研究方向为农田土壤重金属污染治理。
+            </p>
+            <h2>联系方式</h2>
+            <p>电话：+86 15207126272</p>
+            <p>邮箱：847673717@qq.com</p>
+            <p>学校：华中农业大学资源与环境学院</p>
+            <p>个人主页：[LinkedIn/GitHub链接]（可选）</p>
+        </article>
+
+        <aside id="sidebar">
+            <div class="quote">
+                <h3>研究方向</h3>
+                <p>农田土壤重金属污染修复，聚焦课题：水稻根系吸收重金属Cd，As，Cr的调控。</p>
+            </div>
+        </aside>
+    </section>
+
+    <footer>
+        <p>喻凡个人主页, Copyright &copy; 2025</p>
+    </footer>
+</body>
+</html>
